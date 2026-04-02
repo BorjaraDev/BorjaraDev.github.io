@@ -1,30 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Borja Rodríguez - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borja Rodríguez — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-<h1>Borja Rodríguez</h1>
-<p>Estudiante de Desarrollo de Aplicaciones Multiplataforma</p>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
 
-<h2>Proyectos</h2>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Borja<span>.</span>dev</a>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<ul>
-<li>Aplicación WPF de gestión de inventario</li>
-<li>App Android gestor de tareas</li>
-<li>API REST en C#</li>
-</ul>
+  <main>
 
-<h2>Tecnologías</h2>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-tag">Disponible para prácticas y empleo</div>
+        <h1>
+          Hola, soy<br />
+          <span class="accent-line">Borja</span><br />
+          <span class="accent2-line">Rodríguez.</span>
+        </h1>
+        <p class="hero-sub">
+          Desarrollador de aplicaciones multiplataforma (DAM) apasionado por crear software de escritorio, móvil y APIs robustas con .NET, Java y SQL.
+        </p>
+        <div class="hero-ctas">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos →</a>
+          <a href="https://github.com/BorjaraDev" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/borjarodriguez" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
 
-<p>C# | .NET | WPF | Java | SQL | Git</p>
+    <div class="divider"></div>
 
-<h2>Contacto</h2>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">// 01 — Tecnologías</p>
+          <h2 class="section-title">Stack técnico</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-cell">
+            <div class="skill-icon blue">🖥️</div>
+            <p class="skill-name">Desktop .NET</p>
+            <p class="skill-desc">Aplicaciones de escritorio robustas con C#, WPF y arquitectura MVVM.</p>
+            <div class="tech-tags">
+              <span class="tag">C#</span>
+              <span class="tag">.NET</span>
+              <span class="tag">WPF</span>
+              <span class="tag">MVVM</span>
+            </div>
+          </div>
+          <div class="skill-cell">
+            <div class="skill-icon green">📱</div>
+            <p class="skill-name">Android</p>
+            <p class="skill-desc">Apps móviles nativas para Android con Java y Android Studio.</p>
+            <div class="tech-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Android</span>
+              <span class="tag">SQLite</span>
+            </div>
+          </div>
+          <div class="skill-cell">
+            <div class="skill-icon amber">🗄️</div>
+            <p class="skill-name">Backend & Datos</p>
+            <p class="skill-desc">APIs REST en C#, gestión de bases de datos y acceso a datos con DataTable.</p>
+            <div class="tech-tags">
+              <span class="tag">API REST</span>
+              <span class="tag">SQL</span>
+              <span class="tag">DataTable</span>
+            </div>
+          </div>
+          <div class="skill-cell">
+            <div class="skill-icon pink">🔧</div>
+            <p class="skill-name">Herramientas</p>
+            <p class="skill-desc">Control de versiones, entornos de desarrollo y buenas prácticas.</p>
+            <div class="tech-tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Visual Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>Email: tuemail@email.com</p>
+    <div class="divider"></div>
 
+    <!-- PROJECTS -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">// 02 — Proyectos</p>
+          <h2 class="section-title">Lo que he construido</h2>
+        </div>
+        <div class="projects-grid">
+
+          <a href="https://github.com/BorjaraDev" target="_blank" rel="noopener" class="project-card reveal">
+            <div class="project-header">
+              <span class="project-type">WPF · C# · SQL</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-title">Gestión de Inventario</p>
+            <p class="project-desc">Aplicación de escritorio con interfaz WPF para gestión completa de inventarios, con base de datos SQL y operaciones CRUD.</p>
+            <div class="tech-tags">
+              <span class="tag">C#</span>
+              <span class="tag">WPF</span>
+              <span class="tag">.NET</span>
+              <span class="tag">SQL</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/BorjaraDev" target="_blank" rel="noopener" class="project-card reveal">
+            <div class="project-header">
+              <span class="project-type">Android · Java · SQLite</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-title">Gestor de Tareas Android</p>
+            <p class="project-desc">App móvil nativa para organizar tareas y recordatorios con persistencia de datos local mediante SQLite.</p>
+            <div class="tech-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Android</span>
+              <span class="tag">SQLite</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/BorjaraDev" target="_blank" rel="noopener" class="project-card reveal">
+            <div class="project-header">
+              <span class="project-type">C# · .NET · REST</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-title">API REST en C#</p>
+            <p class="project-desc">Diseño e implementación de una API RESTful en .NET con gestión de datos y arquitectura limpia.</p>
+            <div class="tech-tags">
+              <span class="tag">C#</span>
+              <span class="tag">.NET</span>
+              <span class="tag">REST</span>
+              <span class="tag">SQL</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ABOUT -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="section-label">// 03 — Sobre mí</p>
+            <h2 class="section-title" style="margin-bottom:1.5rem;">Desarrollador<br/>desde Donostia</h2>
+            <p>Soy un desarrollador en formación cursando <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> en San Sebastián. Me apasiona construir software que funcione de verdad.</p>
+            <p>Me especializo en el ecosistema <strong>Microsoft .NET</strong> — aplicaciones de escritorio con WPF, backend en C#, acceso a datos — aunque también disfruto del desarrollo <strong>Android con Java</strong>.</p>
+            <p>Actualmente profundizando en <strong>arquitectura de software</strong>, buenas prácticas y desarrollo de APIs robustas. Siempre aprendiendo.</p>
+          </div>
+          <div class="stats-grid reveal">
+            <div class="stat-card">
+              <p class="stat-number">3+</p>
+              <p class="stat-label">Proyectos desarrollados</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">4+</p>
+              <p class="stat-label">Tecnologías dominadas</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">DAM</p>
+              <p class="stat-label">Titulación en curso</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">100%</p>
+              <p class="stat-label">Disponible para empleo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact-section reveal">
+          <p class="section-label" style="text-align:center; margin-bottom:1rem;">// 04 — Contacto</p>
+          <h2>¿Hablamos?</h2>
+          <p>Estoy buscando oportunidades de prácticas o empleo.<br/>Si tienes un proyecto interesante, escríbeme.</p>
+          <div class="contact-links">
+            <a href="mailto:tuemail@email.com" class="btn btn-primary">✉ Enviar email</a>
+            <a href="https://github.com/BorjaraDev" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/borjarodriguez" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>Diseñado y construido por <span>Borja Rodríguez</span> · 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
